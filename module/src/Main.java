@@ -8,15 +8,15 @@ public class Main {
         public static final int CONST_2 = 2;
     }
 
-    public static void f1() {
-        System.out.println("Hello");
-        System.out.println("This");
-        System.out.println("F1");
-    }
-
     public static void f2() {
         System.out.println("Hello");
         System.out.println("This");
         System.out.println("F2");
+    }
+
+    public static void f1() {
+        System.out.println("Hello");
+        System.out.println("This");
+        System.out.println("F1");
     }
 }
