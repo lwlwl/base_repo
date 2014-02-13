@@ -1,26 +1,19 @@
-#include <stdio.h>
-
-// Frobs foo heartily
-int frobnitz(int foo)
-{
-    int i;
-    for(i = 0; i < 10; i++)
-    {
-        printf("Your answer is: ");
-        printf("%d\n", foo);
+int foo(int n) {
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        i++;
+        cout << i;
     }
+    cout << "Done!";
 }
 
-int fact(int n)
-{
-    if(n > 1)
-    {
-        return fact(n-1) * n;
+int bar(int n) {
+    int i = 0;
+    for (int j = 0; j <= i; j++) {
+        j++;
+        i++;
+        print i;
     }
-    return 1;
-}
-
-int main(int argc, char **argv)
-{
-    frobnitz(fact(10));
+    cout << "Done!";
 }

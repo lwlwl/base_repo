@@ -1,25 +1,19 @@
-#include <stdio.h>
-
-int fib(int n)
-{
-    if(n > 2)
-    {
-        return fib(n-1) + fib(n-2);
+int bar(int n) {
+    int i = 0;
+    for (int j = 0; j <= i; j++) {
+        j++;
+        i++;
+        print i;
     }
-    return 1;
+    cout << "Done!";
 }
 
-// Frobs foo heartily
-int frobnitz(int foo)
-{
-    int i;
-    for(i = 0; i < 10; i++)
-    {
-        printf("%d\n", foo);
+int foo(int n) {
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        i++;
+        cout << i;
     }
-}
-
-int main(int argc, char **argv)
-{
-    frobnitz(fib(10));
+    cout << "Done!";
 }
