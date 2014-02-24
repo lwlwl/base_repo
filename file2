@@ -1,30 +1,10 @@
-this
-is
-some
-example
-header
-for
-merge-a
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 das
 <HTML
 eqwe
 ><HEADa
 conflict
 ><TITLE
->Linux Dictionary</TITLE
-><META
-NAME="GENERATOR"
 CONTENT="Modular DocBook HTML Stylesheet Version 1.7"></HEAD
-><BODY
-CLASS="book"
-BGCOLOR="#FFFFFF"
-TEXT="#000000"
-LINK="#0000FF"
-VLINK="#840084"
-ALINK="#0000FF"
-><DIV
-CLASS="BOOK"
 ><A
 NAME="AEN1"
 >&#13;Media Orientated Systems Transport From VERA
@@ -34,100 +14,20 @@ TARGET="_top"
 >http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
 >
 </P
-></DD
-><DT
-><B
 >&#13;MOST
-</B
-></DT
-><DD
-><P
 >&#13;Mobile Open Systems Technologies (UK, Uni Lancaster) From VERA
 <A
 HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
-TARGET="_top"
->http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
->
-</P
-></DD
 ><DT
-><B
->&#13;MOT
-</B
-></DT
-><DD
-><P
->&#13;Means of Test From VERA
-<A
-HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
-TARGET="_top"
->http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
->
-</P
-></DD
-><DT
-><B
 >&#13;motherboard
 </B
 ></DT
 ><DD
 ><P
->&#13;The central circuit board inside a computer, which houses the central processing unit (CPU), the system bus, memory slots, expansion slots, and more. From Redhat-9-Glossary
-></DT
-><DD
-><P
->&#13;Network Attachment Unit (GigaB, IP-router) From VERA
-<A
-HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
-TARGET="_top"
->http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
->
-</P
-></DD
-><DT
-><B
->
-</P
-></DD
-><DT
-><B
 >&#13;nautilus
 </B
-></DT
-><DD
-><P
->&#13;SideBand Address [port / bus] (AGP) From VERA
-<A
-HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
-TARGET="_top"
->http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
->
-</P
-></DD
-><DT
-><B
->&#13;SBA
-</B
-></DT
-><DD
-><P
 >&#13;Standards-Based Architectures From VERA
 <A
 HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
 TARGET="_top"
-<A
-HREF="http://www.tldp.org/LDP/Linux-Dictionary/html/index.html"
-TARGET="_top"
->http://www.tldp.org/LDP/Linux-Dictionary/html/index.html</A
->
-</P
-></DD
-><DT
-><B
->&#13;SBA
-</B
-></DT
-><DD
-><P
->&#13;Synchronous Bandwidth Allocation (SMT, FDDI) From VERA
 <A
