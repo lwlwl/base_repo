@@ -15,7 +15,6 @@
  */
 package com.intellij.xdebugger.frame.presentation;
 
-import com.intellij.ui.SimpleTextAttributes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -72,8 +71,6 @@ public abstract class XValuePresentation {
          * Appends {@code value} highlighted as a keyword
          */
         void renderKeywordValue(@NotNull String value);
-
-        void renderValue(@NotNull String value, @Nullable SimpleTextAttributes attributes);
 
         /**
          * Appends {@code value} surrounded by quotes to the node text colored as a string
