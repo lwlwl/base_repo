@@ -15,6 +15,7 @@
  */
 package com.intellij.xdebugger.frame.presentation;
 
+import com.intellij.ui.SimpleTextAttributes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,69 +27,71 @@ import org.jetbrains.annotations.Nullable;
  * @see com.intellij.xdebugger.frame.XValueNode#setPresentation(javax.swing.Icon, XValuePresentation, boolean)
  */
 public abstract class XValuePresentation {
-  protected static final String DEFAULT_SEPARATOR = " = ";
-
-  /**
-   * Renders value text by delegating to {@code renderer} methods
-   *
-   * @param renderer {@link XValueTextRenderer} instance which provides methods to
-   */
-  public abstract void renderValue(@NotNull XValueTextRenderer renderer);
-
-  /**
-   * @return separator between name and value in a debugger tree
-   */
-  @NotNull
-  public String getSeparator() {
-    return DEFAULT_SEPARATOR;
-  }
-
-  /**
-   * @return optional type of the value, it is shown in gray color and surrounded by braces
-   */
-  @Nullable
-  public String getType() {
-    return null;
-  }
-
-  public interface XValueTextRenderer {
-    /**
-     * Appends {@code value} with to the node text. Invisible characters are shown in escaped form.
-     */
-    void renderValue(@NotNull String value);
+    protected static final String DEFAULT_SEPARATOR = " = ";
 
     /**
-     * Appends {@code value} surrounded by quotes to the node text colored as a string
-     */
-    void renderStringValue(@NotNull String value);
-
-    /**
-     * Appends {@code value} highlighted as a number
-     */
-    void renderNumericValue(@NotNull String value);
-
-    /**
-     * Appends {@code value} highlighted as a keyword
-     */
-    void renderKeywordValue(@NotNull String value);
-
-    /**
-     * Appends {@code value} surrounded by quotes to the node text colored as a string
+     * Renders value text by delegating to {@code renderer} methods
      *
-     * @param value                             value to be shown
-     * @param additionalSpecialCharsToHighlight characters which should be highlighted in a special color
-     * @param maxLength                         maximum number of characters to show
+     * @param renderer {@link XValueTextRenderer} instance which provides methods to
      */
-    void renderStringValue(@NotNull String value, @Nullable String additionalSpecialCharsToHighlight, int maxLength);
+    public abstract void renderValue(@NotNull XValueTextRenderer renderer);
 
     /**
-     * Appends gray colored {@code comment}
+     * @return separator between name and value in a debugger tree
      */
-    void renderComment(@NotNull String comment);
+    @NotNull
+    public String getSeparator() {
+        return DEFAULT_SEPARATOR;
+    }
 
     /**
-     * Appends {@code symbol} which is not part of the value
+     * @return optional type of the value, it is shown in gray color and surrounded by braces
      */
-    void renderSpecialSymbol(@NotNull String symbol);
-  }
+    @Nullable
+    public String getType() {
+        return null;
+    }
+
+    public interface XValueTextRenderer {
+        /**
+         * Appends {@code value} with to the node text. Invisible characters are shown in escaped form.
+         */
+        void renderValue(@NotNull String value);
+
+        /**
+         * Appends {@code value} surrounded by quotes to the node text colored as a string
+         */
+        void renderStringValue(@NotNull String value);
+
+        /**
+         * Appends {@code value} highlighted as a number
+         */
+        void renderNumericValue(@NotNull String value);
+
+        /**
+         * Appends {@code value} highlighted as a keyword
+         */
+        void renderKeywordValue(@NotNull String value);
+
+        void renderValue(@NotNull String value, @Nullable SimpleTextAttributes attributes);
+
+        /**
+         * Appends {@code value} surrounded by quotes to the node text colored as a string
+         *
+         * @param value                             value to be shown
+         * @param additionalSpecialCharsToHighlight characters which should be highlighted in a special color
+         * @param maxLength                         maximum number of characters to show
+         */
+        void renderStringValue(@NotNull String value, @Nullable String additionalSpecialCharsToHighlight, int maxLength);
+
+        /**
+         * Appends gray colored {@code comment}
+         */
+        void renderComment(@NotNull String comment);
+
+        /**
+         * Appends {@code symbol} which is not part of the value
+         */
+        void renderSpecialSymbol(@NotNull String symbol);
+    }
 }
