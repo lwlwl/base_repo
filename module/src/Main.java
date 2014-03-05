@@ -20,3 +20,21 @@ public class Main {
         System.out.println("F1");
     }
 }
+
+public class Main2 {
+    public static void main2(String[] args) {
+        System.out.println("Hello2");
+    }
+
+    public static void f2() {
+        System.out.println("asd");
+        System.out.println("asd");
+        System.out.println("asd");
+    }
+
+    public static void f1() {
+        System.out.println("asd");
+        System.out.println("That");
+        System.out.println("F1");
+    }
+}
