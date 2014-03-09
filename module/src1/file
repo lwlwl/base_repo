@@ -1,51 +1,6 @@
-Index: file
-===================================================================
---- before/1.txt	(date 1394091826000)
-+++ after/1.txt	(date 1394106295000)
-@@ -79,15 +79,8 @@
- 
-   @Override
-   public void onApplied() {
--    myType = ChangeType.deriveApplied(myType);
--    myChangeList.apply(this);
-+    apply();
- 
--    myOriginalSide.getHighlighterHolder().updateHighlighter(myOriginalSide, myType);
--    myOriginalSide.getHighlighterHolder().setActions(new AnAction[0]);
--
--    // display, what one side of the conflict was resolved to
--    myConflict.getHighlighterHolder().updateHighlighter(myConflict, myType);
--
-     // update the other variant of the conflict to point to the bottom
-     if (!mySemiApplied) {
-       ConflictChange otherChange = myConflict.getOtherChange(this);
-@@ -99,6 +92,11 @@
-   }
- 
-   private void updateOtherSideOnConflictApply() {
-+    if (myOriginalSide.getStart() == myOriginalSide.getEnd()) {
-+      apply();
-+      return;
-+    }
-+
-     int startOffset = myConflict.getRange().getEndOffset();
-     TextRange emptyRange = new TextRange(startOffset, startOffset);
-     ConflictChange leftChange = isBranch(myOriginalSide.getFragmentSide()) ? null : this;
-@@ -107,6 +105,17 @@
-     myOriginalSide.getHighlighterHolder().updateHighlighter(myOriginalSide, myType);
-     myConflict.getHighlighterHolder().updateHighlighter(myConflict, myType);
-     myChangeList.fireOnChangeApplied();
-+  }
-+
-+  private void apply() {
-+    myType = ChangeType.deriveApplied(myType);
-+    myChangeList.apply(this);
-+
-+    myOriginalSide.getHighlighterHolder().updateHighlighter(myOriginalSide, myType);
-+    myOriginalSide.getHighlighterHolder().setActions(new AnAction[0]);
-+
-+    // display, what one side of the conflict was resolved to
-+    myConflict.getHighlighterHolder().updateHighlighter(myConflict, myType);
-   }
- 
-   public void onRemovedFromList() {
+1
+2
+3
+4
+5
+6
