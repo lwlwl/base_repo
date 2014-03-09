@@ -15,8 +15,5 @@ public class Main {
     }
 
     public static void f1() {
-        System.out.println("Hello");
-        System.out.println("This");
-        System.out.println("F1");
     }
 }
