@@ -51,6 +51,16 @@ public abstract class XValuePresentation {
         return null;
     }
 
+    /**
+     * Appends gray colored {@code comment}
+     */
+    void renderComment(@NotNull String comment);
+
+    /**
+     * Appends {@code symbol} which is not part of the value
+     */
+    void renderSpecialSymbol(@NotNull String symbol);
+
     public interface XValueTextRenderer {
         /**
          * Appends {@code value} with to the node text. Invisible characters are shown in escaped form.
@@ -81,14 +91,5 @@ public abstract class XValuePresentation {
          */
         void renderStringValue(@NotNull String value, @Nullable String additionalSpecialCharsToHighlight, int maxLength);
 
-        /**
-         * Appends gray colored {@code comment}
-         */
-        void renderComment(@NotNull String comment);
-
-        /**
-         * Appends {@code symbol} which is not part of the value
-         */
-        void renderSpecialSymbol(@NotNull String symbol);
     }
 }

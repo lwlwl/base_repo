@@ -30,7 +30,7 @@ class IntLCS {
   private int[] myCurrentEnds;
   private final int myMaxX;
   private final int myMaxY;
-
+asd
   public IntLCS(int[] first, int[] second) {
     myFirst = first;
     mySecond = second;
@@ -38,7 +38,7 @@ class IntLCS {
     myMaxY = mySecond.length;
 
     myPathsMatrix = new LinkedDiffPaths(myMaxX, myMaxY);
-    myPrevPathKey = new int[myMaxX + myMaxY + 1];
+    myPrevPathKey = new int[myMaxX + myMaxY + 1];asd
     Arrays.fill(myPrevPathKey, -1);
     myPrevEnds = new int[myMaxX + myMaxY + 1];
     myCurrentEnds = new int[myMaxX + myMaxY + 1];
