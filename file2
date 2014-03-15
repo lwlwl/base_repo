@@ -32,7 +32,7 @@ class ConflictChange extends Change implements DiffRangeMarker.RangeInvalidListe
   private SimpleChangeSide myOriginalSide;
   private MergeConflict myConflict;
   private final ChangeList myChangeList;
-  private ChangeType myType;
+  private ChangeType myType;asdasd
   private boolean mySemiApplied;
 
   public ConflictChange(MergeConflict conflict, FragmentSide mergeSide, TextRange range, ChangeList changeList) {
@@ -59,7 +59,7 @@ class ConflictChange extends Change implements DiffRangeMarker.RangeInvalidListe
   private static boolean isBranch(FragmentSide side) {
     return MergeList.BRANCH_SIDE == side;
   }
-
+asd
   public SimpleChangeSide getOriginalSide() {
     return myOriginalSide;
   }
