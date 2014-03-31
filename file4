@@ -49,19 +49,6 @@ class IntLCS {
       int minDiag = -calcBound(myMaxY, d);
       int maxDiag = calcBound(myMaxX, d);
       if (d != 0)
-        System.arraycopy(myPrevEnds, minDiag + myMaxY, myCurrentEnds, minDiag + myMaxY, maxDiag - minDiag);
-       else {
-        int end = skipEquals(0, 0);
-        if (end > 0) {
-          int xy = (end) - 1;
-          myPrevPathKey[myMaxY] = myPathsMatrix.encodeStep(xy, xy, end, false, -1);
-        }
-        if (myMaxX == myMaxY && end == myMaxX) return 0;
-        myPrevEnds[myMaxY] = end;
-        continue;
-      }
-      for (int k = minDiag; k <= maxDiag; k += 2) {
-        int end;
         if (k == -d) {
           int prevEndV = myPrevEnds[k + 1 + myMaxY];
           int vertical = findDiagonalEnd(k + 1, prevEndV, true);
