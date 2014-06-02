@@ -30,7 +30,7 @@ aasdads
   private int[] myCurrentEnds;
   private final int myMaxX;
   private final int myMaxY;
-asd
+asdqqqqqqqqqqqqq
   public IntLCS(int[] first, int[] second) {
     myFirst = first;
     mySecond = second;
