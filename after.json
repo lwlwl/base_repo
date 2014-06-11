@@ -9,7 +9,7 @@
             "DbgIndex": 0,
             "DbgName": "material_1",
             "colorAmbient": [0.0, 0.0, 0.0],
-            "colorDiffuse": [0.18196078810037353, 0.18196078810037353, 0.18196078810037353],
+            "colorDiffaasdasduse": [0.18196078810037353, 0.18196078810037353, 0.18196078810037353],
             "colorSpecular": [0.5, 0.5, 0.5],
             "shading": "Lambert",
             "specularCoef": 50,
