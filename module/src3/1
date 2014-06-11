@@ -1,7 +1,7 @@
 int foo(int n) {
     int i = 0;
     int j = 0;
-    while (iççççç < j) {
+    while (içè < j) {
         i++;
         cout << i;
     }
