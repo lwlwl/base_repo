@@ -1,1 +1,1 @@
-<jsHandler="BS.ConnectedAgentBlocks"/>
+<jsHandler="/>
