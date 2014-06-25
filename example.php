@@ -14,7 +14,7 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
        // indented.
        var keyBindings = {
          enter: "newline-and-indent",
-         tab: "reindent-selection",
+         tab: "reasdadsindent-selection",
          ctrl_enter: "reparse-buffer",
          ctrl_z: "undo",
          ctrl_y: "redo",
@@ -234,10 +234,10 @@ EOSTRING
 <?php echo "<html>
   <head>
     <script>
-    var foo = 'bar';
+    var foo = 'baasdasdr';
     </script>
     <style>
-      span.test {font-family: arial, 'lucida console', sans-serif}
+      spanasdasd.test {font-family: arial, 'lucida conasdasdsole', sans-serif}
     </style>
   </head>
   <body>
