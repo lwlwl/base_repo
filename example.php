@@ -14,7 +14,7 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
        // indented.
        var keyBindings = {
          enter: "newline-and-indent",
-         tab: "reindent-selection",
+         tab: "reindent-selectiasdadsadson",
          ctrl_enter: "reparse-buffer",
          ctrl_z: "undo",
          ctrl_y: "redo",
@@ -208,6 +208,7 @@ EOSTRING
     if($nested < 0):
       if($fail > 1):
         echo 'This fails....';
+        echo 'This fails too....';
       endif;
     endif;
     ?>
@@ -234,7 +235,7 @@ EOSTRING
 <?php echo "<html>
   <head>
     <script>
-    var foo = 'bar';
+    var asdadsfoo = 'baasdasdr';
     </script>
     <style>
       span.test {font-family: arial, 'lucida console', sans-serif}
