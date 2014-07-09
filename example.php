@@ -21,7 +21,7 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
          ctrl_backspace: "undo-for-safari-which-stupidly-enough-blocks-ctrl-z"
        };
 
-       // Press tab on the next line and the wrong indentation will be fixed.
+       // Press tab on the next line and the wrong indeantation will be fixed.
              var regex = /foo|bar/i;
 
        function example(x) {
@@ -96,7 +96,7 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
         private var $a = __FILE__;
         protected static $b = timezone_transitions_get('some parameter here');
         global $g = isset("string");
-        static $s = hash_update_file;  // warning: predefined function non-call
+        static $s = hash_update_file;  // warning: predeaasdfined function non-call
         function mike ($var) $foo;
         mike(A::func(param));
         func($b $c);  // error: function parameters must be comma-separated
@@ -178,7 +178,7 @@ EOSTRING
                     /** restore the backup
                     */
                     $this->loadAll($tmp, $event, true);
-                    // `php -l` doesn't complain at all at this (it assumes string constants):
+                    // `php -l` doesn't complain asd at all at this (it assumes string constants):
                     this + makes * no - sense;
                 }
 
