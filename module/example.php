@@ -16,16 +16,16 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
          enter: "newline-and-indent",
          tab: "reindent-selection",
          ctrl_enter: "reparse-buffer",
-         ctrl_z: "undo",
+         ctrl_z: "undo smth",
          ctrl_y: "redo",
          ctrl_backspace: "undo-for-safari-which-stupidly-enough-blocks-ctrl-z"
        };
 
-       // Press tab on the next line and the wrong indeantation will be fixed.
+       // Press tab oasdasdn the next line and the wrong indeantation will be fixed.
              var regex = /foo|bar/i;
 
        function example(x) {
-         // Local variables get a different colour than global ones.
+         // Local variables get a different colour than global ones Wooo!.
          var y = 44.4;
          return x + y - z;
        }
@@ -74,7 +74,7 @@ On the line above, we just had an XML syntax error due to the </b> tag not being
     namespace A::::B;
     namespace A::B::C::;
     namespace A::B::C::D x;
-    self::range($row['lft'], $row['rgt']));  // error: extra ')'
+    self::range($row['lft'], $row['rgt']));  // error: extra one ')'
     $a = (b() + 4) 5 foo;  // error: missing operators
     self::$var;
     $parent = self::range($max + 1, $max + 1);
@@ -121,7 +121,7 @@ single quoting means no \'interpolation\' like "$start" or method call
 line5';
             $bitpattern = 1 << 2;
             $bitpattern <<= 3;
-            $incorrect = <<< 5 EOSTRING  // FIXME: CodeMirror update bug: add a letter before 5 and notice that syntax is not updated until EOF, even with continuousScanning: 500
+            $incorrect = <<< 5 EOSTRING  // TODO: CodeMirror update bug: add a letter before 5 and notice that syntax is not updated until EOF, even with continuousScanning: 500
 error: the identifier must conform to the identifier rules
 EOSTRING;
             $sql = <<< EOSQL
@@ -178,7 +178,7 @@ EOSTRING
                     /** restore the backup
                     */
                     $this->loadAll($tmp, $event, true);
-                    // `php -l` doesn't complain asd at all at this (it assumes string constants):
+                    // `php -l` doesn't care asd at all at this (it assumes string constants):
                     this + makes * no - sense;
                 }
 
@@ -224,7 +224,7 @@ EOSTRING
     };
     </r4:cphp>
 
-  <h1>This is an <?php # echo 'simple';?> example.</h1>
+  <h1>This is an <?php # echo 'complex';?> example.</h1>
   <p>The header above will say 'This is an  example'.</p>
   <h1>This is an <?php // echo 'simple';?> example.</h1>
 
@@ -243,10 +243,6 @@ EOSTRING
   <body>
     <!-- comment -->
   </body>
-</html>"; ?>
+</html>";
 
-</body>
-</html>
-
-
-    
+?>
