@@ -134,7 +134,9 @@ EOSQL;
 some lines here
 EOSTRING
 . 'something extra';
-            $page_lft = ($domain->name() == 'page') ? $start + 1 : $page_start + 1;
+            $page_lft = ($domain->name() == 'page')
+                ? $start + 1
+                : $page_start + 1;
             echo "This is class foo";
             echo "a = ".$this ->a[2+3*$array["foo"]]."";
             echo "b = {$this->b}";  // FIXME: highlight interpolation in strings
