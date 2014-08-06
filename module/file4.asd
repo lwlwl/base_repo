@@ -139,8 +139,6 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     if (data.getMatched() != null) return true;
     if (data.hasMatchedChild()) return false;
 
-    // TODO: not matched with somehow matched children ?
-
     return true;
   }
 
@@ -579,7 +577,6 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     throw new IllegalStateException();
   }
 
-  // TODO: clear in the end?
   private static class UserData {
     private boolean myMoved;
     private boolean myRichLeaf;
