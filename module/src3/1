@@ -5,7 +5,7 @@ int foo(int n) {
         i++;
         cout << i;
     }
-    cout << "Done!";
+    cout << "";
 }
 
 int bar(int n) {
