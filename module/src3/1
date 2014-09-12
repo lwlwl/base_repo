@@ -8,6 +8,13 @@ int foo(int n) {
     cout << "";
 }
 
+
+
+
+
+
+
+
 int bar(int n) {
     int i = 0;
     for (int j = 0; j <= i; j++) {
