@@ -5,15 +5,5 @@ int bar(int n) {
         i++;
         print i;
     }
-    cout << "Done!";
-}
-
-int foo(int n) {ssssssssssss
-    int i = 0;
-    int j = 0;
-    while (i < j) {
-        i++;
-        cout << i;
-    }
-    cout << "Done!";
+    cout << "Done!";sad
 }
