@@ -1,2 +1,24 @@
-cool data
-asdasdasd
+int foo(int n) {
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        i++;
+        cout << i;
+    }
+    cout << "";
+}
+
+asd
+
+asd
+
+
+int bar(int n) {
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        i++;
+        cout << i;
+    }
+    cout << "Done!";
+}

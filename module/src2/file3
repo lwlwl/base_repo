@@ -1,3 +1,23 @@
-before
-contenent
-after
+int foo(int n) {
+
+s
+
+
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        i++;
+        cout << i;
+    }
+    cout << "";
+}
+
+int bar(int n) {
+    int i = 0;
+    int j = 0;
+    while (i < j) {
+        iasd+;
+         <sa< ai;asd
+    }
+    cout << "Done!";
+}
