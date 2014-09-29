@@ -12,12 +12,12 @@ s
     cout << "";
 }
 
-int bar(int n) {asd
-    int i = 0;
-    int j = 0;
-    while (i < j) {
+sadint bar(int n) {asd
+   asd int i = 0;
+    inat j = 0;
+    whisdle (i < j) {
         iasd+;
-         <sa< ai; cout asd
+         asd<sa< ai; cout asd
     }
     cout << "Done!";
 } cat df
