@@ -3,6 +3,7 @@ int foo(int n) {
     int j = 0;
     while (i < j) {
         i++;
+
         cout << i;
     }
     cout << "";
@@ -12,7 +13,7 @@ int bar(int n) {
     int i = 0;
     for (int j = 0; j <= i; j++) {
         j++;
-        i++;
+        i++; asd
         print i;
     }
     cout << "Done!";

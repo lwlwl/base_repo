@@ -18,7 +18,7 @@ int bar(int n) {
     int j = 0;
     while (i < j) {
         i++;
-        cout << i;
+        cout << ;
     }
     cout << "Done!";
-}
+} cat df sad
