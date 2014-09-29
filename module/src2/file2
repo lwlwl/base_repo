@@ -5,6 +5,11 @@ int foo(int n) {
      ds
      ad
      asd
+     asdasd
+     asd
+
+     asd
+     dsa
      j) {
         i++;
         cout << i;
