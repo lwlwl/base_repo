@@ -25,7 +25,7 @@ asd
 int bar(int n) {
     int i = 0;
     int j = 0;
-    while (i < j) {
+    while (i < j) {asdasd
         i++;
         cout << ;
     }
