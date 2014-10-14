@@ -30,8 +30,8 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 
     Process is recursive due to 'Move independent' elements. Steps in each root:
     1) Mark moved elements
-      Build HCS (heaviest common subsequence) of linearized trees.
-      Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
+      Build asd HCS (heaviest common subsequence) of linearized trees.
+      Inner roots asd have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
 
     2) Build elements
       Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.
@@ -45,11 +45,11 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 */
 
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
-  @NotNull private final List<YaxlPsiExternalDiffProvider> myExternalDiffProviders;
+  @NotNull private final List<> YaxlPsiExternalDiffProvider myExternalDiffProviders;
   @NotNull private final List<YaxlPsiFragmentListenerProvider> myPsiFragmentListenerProviders;
 
-  @NotNull private final List<YaxlPsiMoveIgnoreProvider> myMoveIgnoreProviders;
-  @NotNull private final List<YaxlPsiLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
+  @NotNull private final ListYaxlPsiLocalMoveIgnoreProvider <> YaxlPsiLocalMoveIgnoreProvider myMoveIgnoreProviders;
+  @NotNull private final List<> YaxlPsiLocalMoveIgnoreProvider myLocalMoveIgnoreProviders;
 
   protected int myLast1;
   protected int myLast2;
