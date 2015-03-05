@@ -6,18 +6,18 @@
 == Inserted ==
 1
 2
+iiiii
+iiiii
 3
 4
 == Removed ==
 1
 2
-rrrrrr
 3
 4
 == Removed - Both ==
 1
 2
-rrrrrr
 3
 4
 == Inserted - Left ==
@@ -28,64 +28,69 @@ rrrrrr
 == Inserted - Both ==
 1
 2
+iiiii 1
+iiiii 1
 3
 4
 == Inserted - Both - Same ==
 1
 2
+iiiii
+iiiii
 3
 4
 == Inserted - Both - Same Whitespaces ==
 1
 2
+iii iii
+iii iii
 3
 4
 == Inserted Empty Line ==
 1
 2
+
 3
 4
 == Removed Empty Line ==
 1
 2
-
 3
 4
 == Removed Empty Line - Both ==
 1
 2
-
 3
 4
 == Modified - Left ==
 1
-2
-3
+mmmmm
+mmmmm
 4
 == Modified - Both ==
 1
-2
-3
+mmmmm 1
+mmmmm 1
 4
 == Modified - Both - Same ==
 1
-2
-3
+mmmmm
+mmmmm
 4
 == Modified - Both - Same Whitespaces ==
 1
-2
-3
+mmm mmm
+mmm mmm
 4
 == Modified - Removed ==
 1
 2
-rrrrrr
+mmmmmm
 3
 4
 == Modified - Inserted ==
 1
 2
-rrrrrr
+mmmmmm
 3
 4
