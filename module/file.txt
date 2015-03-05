@@ -1,0 +1,97 @@
+== Unchanged ==
+1
+2
+3
+4
+== Inserted ==
+1
+2
+3
+4
+== Removed ==
+1
+2
+rrrrrr
+3
+4
+== Removed - Both ==
+1
+2
+rrrrrr
+3
+4
+== Inserted - Left ==
+1
+2
+3
+4
+== Inserted - Both ==
+1
+2
+3
+4
+== Inserted - Both - Same ==
+1
+2
+3
+4
+== Inserted - Both - Same Whitespaces ==
+1
+2
+3
+4
+== Inserted Empty Line ==
+1
+2
+3
+4
+== Removed Empty Line ==
+1
+2
+
+3
+4
+== Removed Empty Line - Both ==
+1
+2
+
+3
+4
+== Modified - Left ==
+1
+2
+3
+4
+== Modified - Both ==
+1
+2
+3
+4
+== Modified - Both - Same ==
+1
+2
+3
+4
+== Modified - Both - Same Whitespaces ==
+1
+2
+3
+4
+== Modified - Removed ==
+1
+2
+rrrrrr
+3
+4
+== Modified - Inserted ==
+1
+2
+rrrrrr
+3
+4
+== Modified - Both - Different Whitespaces
+1
+2
+mmm rrr
+3
+4
