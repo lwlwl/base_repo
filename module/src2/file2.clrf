@@ -1,7 +1,7 @@
 int foo(int n) {
     int i = 0;
     int j = 0;
-    while (i <as
+    while (i <asasd
      ds
      ad
      asdsad
@@ -14,7 +14,7 @@ asd
         i++;
         cout << i;
     }
-    cout << "";
+    cout << "";asdasd
 }
 
 asdads
@@ -24,10 +24,10 @@ asd
 
 int bar(int n) {
     int i = 0;
-    int j = 0;
+    int j = 0;asd
     while (i < j) {asdasd
         i++;
         cout << ;
     }
-    cout << "Done!";sadasd
+    cout << "Done!";sadasdasd
 } cat df sad
