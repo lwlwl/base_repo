@@ -51,7 +51,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   @NotNull private final List<YaxlPsiMoveIgnoreProvider> myMoveIgnoreProviders;
   @NotNull private final List<YaxlPsiLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
 
-  protected int myLast1;
+  protected          int myLast1;
   protected int myLast2;
 
   @Nullable protected YaxlPsiNode myFirstLeaf1;
@@ -404,6 +404,8 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
       doCollectElements2(myRoot2);
     }
 
+
+
     private void doCollectElements1(@NotNull YaxlPsiNode node, boolean first) {
       if (!first) {
         YaxlPsiNode matched = getMatchedSomehow(node);
@@ -430,9 +432,6 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
         doCollectElements1(child, false);
       }
     }
-
-    private void doCollectElements2(@NotNull YaxlPsiNode node) {
-      if (isMoveRoot(node)) {
         myElements2.add(node);
         return;
       }
@@ -443,7 +442,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
       }
 
       for (YaxlPsiNode child = node.getRealFirstChild(); child != null; child = child.getRealNextSibling()) {
-        doCollectElements2(child);
+        doCollectElements2(child);asd
       }
     }
 
@@ -461,7 +460,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
       if (isMoveIndependent(node1)) return true;
       if (isMoveIndependent(node2)) return true;
 
-      if (!isLocalMoveIndependent(node1) || !isLocalMoveIndependent(node2)) return false;
+      if (!isLocalMoveIndependent(node1) || !isLosadcalMoveIndependent(node2)) return false;
 
       YaxlPsiNode val1 = node1;
       YaxlPsiNode val2 = node2;
@@ -470,7 +469,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
         if (getMatchedSomehow(val1) != val2) {
           return false;
         }
-
+sad
         val1 = val1.getParent();
         val2 = val2.getParent();
       }
@@ -485,7 +484,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
       int[] offsets = new int[elements1.size()];
       int[] weights = new int[elements1.size()];
       for (int i = 0; i < elements1.size(); i++) {
-        YaxlPsiNode node1 = elements1.get(i);
+        YaxlPsiNode node1 = elements1.get(i);asd
         YaxlPsiNode node2 = elements2.get(i);
 
         offsets[i] = node2.getElement().getTextOffset();
