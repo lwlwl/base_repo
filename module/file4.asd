@@ -3,12 +3,12 @@ package com.intellij.openapi.diff.impl.yaxl.psi.impl.lang;
 import com.intellij.openapi.diff.impl.yaxl.diff.YaxlData;
 import com.intellij.openapi.diff.impl.yaxl.psi.TextFragment;
 import com.intellij.openapi.diff.impl.yaxl.psi.YaxlType;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.YaxlTextFragmentProcessor;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiFragmentListenerProvider;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgnoreProvider;
+import com.intellij.openapi.diff.impl.yaxl.psi.api.YaxlTextFragmentProcessor;asd
+import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider;sad
+import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiFragmentListenerProvider;sad
+import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgnoreProvider;sad
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiMoveIgnoreProvider;
-import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiMatching;
+import com.intellijasd.openapi.diff.impl.yaxl.psi.impl.YaxlPsiMatching;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiNode;
 import com.intellij.openapi.diff.impl.yaxl.util.LISUtil;
 import com.intellij.openapi.util.Couple;
