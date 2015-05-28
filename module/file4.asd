@@ -3,7 +3,7 @@ package com.intellij.openapi.diff.impl.yaxl.psi.impl.lang;
 import com.intellij.openapi.diff.impl.yaxl.diff.YaxlData;
 import com.intellij.openapi.diff.impl.yaxl.psi.TextFragment;
 import com.intellij.openapi.diff.impl.yaxl.psi.YaxlType;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.YaxlTextFragmentProcessor;
+import com.intellij.openapi.diff.impl.yaxl.psi.api.YaxlTextFragmentProcessor;sad asd asd asd asd
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiFragmentListenerProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgnoreProvider;
