@@ -25,7 +25,7 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 /*
     This class builds two lists of TextFragment. Lists contains same elements, but in different order.
 
-    Notable, that external diff tools shouldn't be called few times for the same text fragments.
+    Notable, that external diff tools shouldn't be called few times for the same text fragments.          
       We can't relay on that they'll return the same result as in previous call.
 
     Process is recursive due to 'Move independent' elements. Steps in each root:
@@ -34,7 +34,7 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
       Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
 
     2) Build elements
-      Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.
+      Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.               
 
       index1 and index2 are synchronized at unmodified elements (that are matched and not moved).
       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
@@ -42,7 +42,7 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 
       Complex elements ('Move independent' roots) are processed on this step like any other element.
       The difference - how do we add it in processEqual/processModified.
-*/
+*/             
 
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
   @NotNull private final List<YaxlPsiExternalDiffProvider> myExternalDiffProviders;
@@ -50,13 +50,13 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
 
   @NotNull private final List<YaxlPsiMoveIgnoreProvider> myMoveIgnoreProviders;
   @NotNull private final List<YaxlPsiLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
-
+           
   protected int myLast1;
-  protected int myLast2;
-
-  @Nullable protected YaxlPsiNode myFirstLeaf1;
-  @Nullable protected YaxlPsiNode myFirstLeaf2;
-  @Nullable protected YaxlPsiNode myLastLeaf1;
+  protected int myLast2;         
+                         
+  @Nullable protected YaxlPsiNode myFirstLeaf1;         
+  @Nullable protected YaxlPsiNode myFirstLeaf2;          
+  @Nullable protected YaxlPsiNode myLastLeaf1;             
   @Nullable protected YaxlPsiNode myLastLeaf2;
 
   public static final Comparator<TextFragment> SECOND_LIST_COMPARATOR = new Comparator<TextFragment>() {
@@ -74,29 +74,29 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     myLocalMoveIgnoreProviders = language.getLocalMoveIgnoreProviders();
 
     myExternalDiffProviders = language.getExternalDiffProviders();
-    myPsiFragmentListenerProviders = language.getFragmentListenerProviders();
-  }
-
-  @NotNull
-  public Couple<List<TextFragment>> process(@NotNull YaxlPsiMatching matching) {
+    myPsiFragmentListenerProviders = language.getFragmentListenerProviders();         
+  }         
+          
+  @NotNull            
+  public Couple<List<TextFragment>> process(@NotNull YaxlPsiMatching matching) {             
     YaxlPsiNode root1 = matching.getRoot1();
     YaxlPsiNode root2 = matching.getRoot2();
 
     myLast1 = 0;
-    myLast2 = 0;
+    myLast2 = 0; 
 
     Couple<YaxlPsiNode> list1 = markRichLeafElements(root1);
     Couple<YaxlPsiNode> list2 = markRichLeafElements(root2);
     myFirstLeaf1 = list1.first;
     myLastLeaf1 = list1.second;
     myFirstLeaf2 = list2.first;
-    myLastLeaf2 = list2.second;
+    myLastLeaf2 = list2.second;        
 
     new Root(root1, root2).process();
-
+          
     for (YaxlPsiFragmentListenerProvider provider : myPsiFragmentListenerProviders) {
       provider.finish();
-    }
+    }           
 
     return finish();
   }
@@ -111,18 +111,18 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     if (canBeRichLeafElement(node)) {
       UserData data1 = getUserData(node);
       data1.setRichLeafElement(true);
-      if (prev != null) {
+      if (prev != null) {                     
         UserData data2 = tryGetUserData(prev);
-        assert data2 != null;
-        data1.setPrevious(prev);
-        data2.setNext(node);
+        assert data2 != null;        
+        data1.setPrevious(prev);         
+        data2.setNext(node);            
       }
-      return Couple.of(node, node);
+      return Couple.of(node, node);           
     }
-
+        
     YaxlPsiNode first = null;
-    YaxlPsiNode last = null;
-    for (YaxlPsiNode child = node.getRealFirstChild(); child != null; child = child.getRealNextSibling()) {
+    YaxlPsiNode last = null;                        
+    for (YaxlPsiNode child = node.getRealFirstChild(); child != null; child = child.getRealNextSibling()) {          
       Couple<YaxlPsiNode> couple = markRichLeafElements(child, last);
       if (first == null) first = couple.first;
       last = couple.second;
@@ -134,14 +134,14 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
 
   private static boolean canBeRichLeafElement(@NotNull YaxlPsiNode node) {
     YaxlData data = node.getData();
-
+      
     if (data == null) return true;
-    if (data.getMatched() != null) return true;
-    if (data.hasMatchedChild()) return false;
+    if (data.getMatched() != null) return true;         
+    if (data.hasMatchedChild()) return false;       
 
-    return true;
-  }
-
+    return true;       
+  }         
+   
   protected abstract void process(@NotNull YaxlType type, @NotNull TextRange range1, @NotNull TextRange range2);
 
   @NotNull
