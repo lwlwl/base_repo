@@ -10,7 +10,7 @@ import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgn
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiMoveIgnoreProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiMatching;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiNode;
-import com.intellij.openapi.diff.impl.yaxl.util.LISUtil;
+import com.intellij.openapi.diff.impl.yaxl.util.LISUtil; RIGHT ONE
 import com.intellij.openapi.util.Couple;
 import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;
