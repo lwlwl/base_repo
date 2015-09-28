@@ -1,5 +1,5 @@
 package com.intellij.openapi.diff.impl.yaxl.psi.impl.lang;
-
+RESOLCED
 import com.intellij.openapi.diff.impl.yaxl.diff.YaxlData;
 import com.intellij.openapi.diff.impl.yaxl.psi.TextFragment;
 import com.intellij.openapi.diff.impl.yaxl.psi.YaxlType;

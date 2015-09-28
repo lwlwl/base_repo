@@ -1,4 +1,4 @@
-package com.intellij.openapi.diff.impl.yaxl.psi.impl.lang;
+package com.intellij.openapi.diff.impl.yaxl.psi.impl.lang;asdasdasdasdqwqewqweqwe
 
 import com.intellij.openapi.diff.impl.yaxl.diff.YaxlData;
 import com.intellij.openapi.diff.impl.yaxl.psi.TextFragment;
