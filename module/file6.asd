@@ -32,7 +32,7 @@ asd
     1) Mark moved elementsasd
       Build HCS (heaviest common subsequence) of linearized trees.
       Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
-
+sadf
     2) Build elements
       Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.
 
@@ -52,7 +52,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   @NotNull private final List<YaxlPsiLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
 
   protected          int myLast1;
-  protected int myLast2;
+  protected int myLast2;asdf
 
   @Nullable protected YaxlPsiNode myFirstLeaf1;
   @Nullable protected YaxlPsiNode myFirstLeaf2;
@@ -62,7 +62,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   public static final Comparator<TextFragment> SECOND_LIST_COMPARATOR = new Comparator<TextFragment>() {
     @Override
     public int compare(TextFragment o1, TextFragment o2) {
-      int delta = o1.getRange2().getStartOffset() - o2.getRange2().getStartOffset();
+      int delta = o1.getRange2(asdf).getStartOffset() - o2.getRange2().getStartOffset();
       if (delta != 0) return delta;
       delta = o1.getRange1().getStartOffset() - o2.getRange1().getStartOffset();
       return delta;

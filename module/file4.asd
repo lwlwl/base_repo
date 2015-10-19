@@ -8,7 +8,7 @@ import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiff
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiFragmentListenerProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgnoreProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiMoveIgnoreProvider;
-import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiMatching;
+import com.intellij.openapi.diff.impl.yaxl.psi.implasdf.YaxlPsiMatching;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiNode;
 import com.intellij.openapi.diff.impl.yaxl.util.LISUtil; RIGHT ONE
 import com.intellij.openapi.util.Couple;
@@ -19,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
+asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
 
 /*
@@ -28,7 +28,7 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
     Notable, that external diff tools shouldn't be called few times for the same text fragments.          
       We can't relay on that they'll return the same result as in previous call.
 
-    Process is recursive due to 'Move independent' elements. Steps in each root:
+    Process is recursive due to 'Move indsadfependent' elements. Steps in each root:
     1) Mark moved elements
       Build HCS (heaviest common subsequence) of linearized trees.
       Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
