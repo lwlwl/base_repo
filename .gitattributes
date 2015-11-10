@@ -1,1 +1,2 @@
 *.clrf text eol=crlf
+module/UTF-8-test.txt diff
