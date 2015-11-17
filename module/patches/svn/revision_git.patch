@@ -1,0 +1,11 @@
+Index: C1.java
+===================================================================
+diff --git a/WithBranches4/branches/branch200/src/b/c/C1.java b/WithBranches4/branches/branch200/src/b/c/C1.java
+--- a/WithBranches4/branches/branch200/src/b/c/C1.java	(revision 1115)
++++ b/WithBranches4/branches/branch200/src/b/c/C1.java	(revision 1116)
+
+Property changes on: WithBranches4/branches/branch200/src/b/c/C1.java
+___________________________________________________________________
+Added: xxx:xxx
+Added: yyy:yyy
+Added: zzz:zzz

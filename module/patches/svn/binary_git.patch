@@ -1,0 +1,16 @@
+Index: vcs_roots.png
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: vcs_roots.png
+===================================================================
+diff --git a/WithBranches4/trunk/vcs_roots.png b/WithBranches4/trunk/vcs_roots.png
+--- a/WithBranches4/trunk/vcs_roots.png	(revision 0)
++++ b/WithBranches4/trunk/vcs_roots.png	(revision 790)
+
+Property changes on: WithBranches4/trunk/vcs_roots.png
+___________________________________________________________________
+Added: svn:mime-type
+## -0,0 +1 ##
++application/octet-stream
+\ No newline at end of property

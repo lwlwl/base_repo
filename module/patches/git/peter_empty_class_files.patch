@@ -1,0 +1,101 @@
+User: peter
+Date: 13 Nov 15 09:43
+Revision: remote run
+Summary:
+empty class files
+
+TeamCity URL: http://buildserver.labs.intellij.net/viewModification.html?tab=vcsModificationFiles&modId=626525&personal=true
+
+Index: idea-tests/src/com/intellij/psi/impl/file/impl/FileManagerTest.java
+===================================================================
+--- idea-tests/src/com/intellij/psi/impl/file/impl/FileManagerTest.java	(revision 13 11 2015 09:43)
++++ idea-tests/src/com/intellij/psi/impl/file/impl/FileManagerTest.java	(revision After)
+@@ -81,8 +81,8 @@
+     VirtualFile jspFile = createChildData(myPrjDir1, "a.jsp");
+     VirtualFile javaFile = createChildData(mySrcDir1, "a.java");
+     VirtualFile javaFile1 = createChildData(myPrjDir1, "a.java");
+-    VirtualFile compiledFile = createChildData(mySrcDir1, "a.class");
+-    VirtualFile compiledFile1 = createChildData(myClsDir1, "a.class");
++    VirtualFile compiledFileInSrc = createChildData(mySrcDir1, "a.class");
++    VirtualFile compiledFileInCls = createChildData(myClsDir1, "a.class");
+     VirtualFile excludedFile = createChildData(myExcludedDir1, "a.txt");
+ 
+     FileManagerImpl fileManager = (FileManagerImpl)myPsiManager.getFileManager();
+@@ -103,10 +103,10 @@
+     assertTrue(javaPsiFile1 instanceof PsiJavaFile);
+     //assertTrue(javaPsiFile1 instanceof PsiPlainTextFile);
+ 
+-    PsiFile compiledPsiFile = fileManager.findFile(compiledFile);
+-    assertNull(compiledPsiFile);
++    PsiFile compiledPsiFile = fileManager.findFile(compiledFileInSrc);
++    assertInstanceOf(compiledPsiFile, PsiBinaryFile.class);
+ 
+-    PsiFile compiledPsiFile1 = fileManager.findFile(compiledFile1);
++    PsiFile compiledPsiFile1 = fileManager.findFile(compiledFileInCls);
+     assertTrue(compiledPsiFile1 instanceof PsiJavaFile);
+     assertTrue(compiledPsiFile1 instanceof PsiCompiledElement);
+ 
+Index: community/java/java-psi-impl/src/com/intellij/psi/ClassFileViewProvider.java
+===================================================================
+--- community/java/java-psi-impl/src/com/intellij/psi/ClassFileViewProvider.java	(revision 13 11 2015 09:43)
++++ community/java/java-psi-impl/src/com/intellij/psi/ClassFileViewProvider.java	(revision After)
+@@ -21,7 +21,9 @@
+ import com.intellij.openapi.project.Project;
+ import com.intellij.openapi.roots.FileIndexFacade;
+ import com.intellij.openapi.vfs.VirtualFile;
++import com.intellij.psi.impl.PsiManagerImpl;
+ import com.intellij.psi.impl.compiled.ClsFileImpl;
++import com.intellij.psi.impl.file.PsiBinaryFileImpl;
+ import org.jetbrains.annotations.NotNull;
+ 
+ /**
+@@ -40,7 +42,7 @@
+   protected PsiFile createFile(@NotNull final Project project, @NotNull final VirtualFile vFile, @NotNull final FileType fileType) {
+     FileIndexFacade fileIndex = ServiceManager.getService(project, FileIndexFacade.class);
+     if (!fileIndex.isInLibraryClasses(vFile) && fileIndex.isInSource(vFile)) {
+-      return null;
++      return new PsiBinaryFileImpl((PsiManagerImpl)getManager(), this);
+     }
+ 
+     // skip inners & anonymous
+Index: community/java/java-tests/testData/projectView/packageView/src/com/package1/emptyClassFile.class
+===================================================================
+--- community/java/java-tests/testData/projectView/packageView/src/com/package1/emptyClassFile.class	(revision After)
++++ community/java/java-tests/testData/projectView/packageView/src/com/package1/emptyClassFile.class	(revision After)
+@@ -0,0 +1,0 @@
+Index: community/java/java-tests/testSrc/com/intellij/projectView/PackagesTreeStructureTest.java
+===================================================================
+--- community/java/java-tests/testSrc/com/intellij/projectView/PackagesTreeStructureTest.java	(revision 13 11 2015 09:43)
++++ community/java/java-tests/testSrc/com/intellij/projectView/PackagesTreeStructureTest.java	(revision After)
+@@ -73,6 +73,7 @@
+                        "    Class1.java\n" +
+                        "    Class2.java\n" +
+                        "    Class4.java\n" +
++                       "    emptyClassFile.class\n" +
+                        "    Form1.form\n" +
+                        "    Form1.java\n" +
+                        "    Form2.form\n" +
+@@ -120,6 +121,7 @@
+                         "  Class1.java\n" +
+                         "  Class2.java\n" +
+                         "  Class4.java\n" +
++                        "  emptyClassFile.class\n" +
+                         "  Form1.form\n" +
+                         "  Form1.java\n" +
+                         "  Form2.form\n" +
+@@ -168,6 +170,7 @@
+                     "    Class1.java\n" +
+                     "    Class2.java\n" +
+                     "    Class4.java\n" +
++                    "    emptyClassFile.class\n" +
+                     "    Form1.form\n" +
+                     "    Form1.java\n" +
+                     "    Form2.form\n" +
+@@ -182,6 +185,7 @@
+                      "  Class1.java\n" +
+                      "  Class2.java\n" +
+                      "  Class4.java\n" +
++                     "  emptyClassFile.class\n" +
+                      "  Form1.form\n" +
+                      "  Form1.java\n" +
+                      "  Form2.form\n" +

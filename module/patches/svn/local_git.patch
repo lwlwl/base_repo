@@ -1,0 +1,14 @@
+Index: C1.java
+===================================================================
+diff --git a/WithBranches4/branches/branch200/src/b/c/C1.java b/WithBranches4/branches/branch200/src/b/c/C1.java
+--- a/WithBranches4/branches/branch200/src/b/c/C1.java	(revision 1116)
++++ b/WithBranches4/branches/branch200/src/b/c/C1.java	(working copy)
+
+Property changes on: WithBranches4/branches/branch200/src/b/c/C1.java
+___________________________________________________________________
+Added: uuu:uuu
+Modified: xxx:xxx
+## -0,0 +1 ##
++asdfadsfdsafsf
+\ No newline at end of property
+Deleted: yyy:yyy

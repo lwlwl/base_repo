@@ -1,0 +1,26 @@
+Index: Main.java
+===================================================================
+--- Main.java	(revision 1115)
++++ Main.java	(working copy)
+@@ -30,16 +30,16 @@
+                         f
+                                 dsa
+                                 f
+-                                        s
++
++                            fdsa
++        f
++                sad
++        fs
+                                         af
+                                                 sad
+                                                 f
+     }
+ 
+-    public static void a() {
+-    	System.out.println();
+-    }
+-
+     public static void b() {
+         System.out.println();
+     }

@@ -1,0 +1,23 @@
+Index: C2222.java
+===================================================================
+--- C2222.java	(revision 0)
++++ C2222.java	(revision 1118)
+@@ -0,0 +1,18 @@
++package b.c;
++
++/**
++ * Created by konstantin.kolosovsk on 12/3/2014.
++ */
++public class C2 {
++    public static void main(String[] args) {
++        System.out.println();
++        System.out.println();
++        System.out.println();
++		fds
++		af
++		sa
++		f
++		dsaf
++		ds
++    }
++}

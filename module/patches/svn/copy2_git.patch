@@ -1,0 +1,25 @@
+Index: C2222.java
+===================================================================
+diff --git a/WithBranches4/branches/branch200/src/b/c/C2222.java b/WithBranches4/branches/branch200/src/b/c/C2222.java
+new file mode 10644
+--- /dev/null	(revision 0)
++++ b/WithBranches4/branches/branch200/src/b/c/C2222.java	(revision 1118)
+@@ -0,0 +1,18 @@
++package b.c;
++
++/**
++ * Created by konstantin.kolosovsk on 12/3/2014.
++ */
++public class C2 {
++    public static void main(String[] args) {
++        System.out.println();
++        System.out.println();
++        System.out.println();
++		fds
++		af
++		sa
++		f
++		dsaf
++		ds
++    }
++}
