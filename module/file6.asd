@@ -16,7 +16,7 @@ import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;asd
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
+import java.util.ArrayList;qweqewqewqew
 import java.util.Comparator;
 import java.util.List;
 
