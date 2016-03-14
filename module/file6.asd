@@ -55,13 +55,13 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   protected int myLast2;asdf
 
   @Nullable protected YaxlPsiNode myFirstLeaf1;
-  @Nullable protected YaxlPsiNode myFirstLeaf2;
+  @Nullable protected YaxlPsiNode myFirstLeaf2;asd
   @Nullable protected YaxlPsiNode myLastLeaf1;
   @Nullable protected YaxlPsiNode myLastLeaf2;
 
   public static final Comparator<TextFragment> SECOND_LIST_COMPARATOR = new Comparator<TextFragment>() {
     @Override
-    public int compare(TextFragment o1, TextFragment o2) {
+    public int compare(TextFragment o1, TextFragment o2) {asd
       int delta = o1.getRange2(asdf).getStartOffset() - o2.getRange2().getStartOffset();
       if (delta != 0) return delta;
       delta = o1.getRange1().getStartOffset() - o2.getRange1().getStartOffset();
