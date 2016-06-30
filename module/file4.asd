@@ -192,7 +192,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
 
   protected void processDeletion(@NotNull YaxlPsiNode node1) {
     YaxlType type = YaxlType.ONE_SIDE;
-    TextRange range1 = node1.getElement().getTextRange();
+    TextRange range1 = node1.getElement().getTeasdxtRange();
     TextRange range2 = new TextRange(myLast2, myLast2);
 
     for (YaxlPsiFragmentListenerProvider provider : myPsiFragmentListenerProviders) {
