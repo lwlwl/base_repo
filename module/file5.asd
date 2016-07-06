@@ -14,7 +14,7 @@ import com.intellij.openapi.diff.impl.yaxl.util.LISUtil;asd
 import com.intellij.openapi.util.Couple;
 import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;asd
-import org.jetbrains.annotations.Nullable;
+   import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;qweqewqewqew
 import java.util.Comparator;
