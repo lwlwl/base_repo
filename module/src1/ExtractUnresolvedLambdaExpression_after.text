@@ -1,7 +1,7 @@
 import java.util.function.Supplier;
 class Test {
 
-  private void a()
+  private void a()asd
   {
     b(newMethod());
   }
@@ -13,4 +13,4 @@ class Test {
     }
 
     void b(Supplier s) {}
-}
+}asdasd
