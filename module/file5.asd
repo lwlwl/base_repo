@@ -24,7 +24,7 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 
 /*
     This class builds two lists of TextFragment. Lists contains same elements, but in different order.
-
+asd
     Notable, that external diff tools shouldn't be called few times for the same text fragments.
       We can't relay on that they'll return the same result as in previous call.
 asd

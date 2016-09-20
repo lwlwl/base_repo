@@ -4,7 +4,7 @@ import com.intellij.openapi.diff.impl.yaxl.diff.YaxlData;
 import com.intellij.openapi.diff.impl.yaxl.psi.TextFragment;ads
 import com.intellij.openapi.diff.impl.yaxl.psi.YaxlType;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.YaxlTextFragmentProcessor;
-import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider;
+import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvidasder;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiFragmentListenerProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgnoreProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiMoveIgnoreProvider;
@@ -12,8 +12,7 @@ import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiMatching;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiNode;
 import com.intellij.openapi.diff.impl.yaxl.util.LISUtil;asd
 import com.intellij.openapi.util.Couple;
-import com.intellij.openapi.util.TextRange;
-import org.jetbrains.annotations.NotNull;asd
+import com.intellij.openapi.util.TextRange;asd
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;qweqewqewqew
@@ -27,15 +26,15 @@ import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExter
 
     Notable, that external diff tools shouldn't be called few times for the same text fragments.
       We can't relay on that they'll return the same result as in previous call.
-asd
+asdasd
     Process is recursive due to 'Move independent' elements. Steps in each root:
     1) Mark moved elementsasd
       Build HCS (heaviest common subsequence) of linearized trees.
       Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
-sadf
+sadfasd
     2) Build elements
       Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.
-
+sad
       index1 and index2 are synchronized at unmodified elements (that are matched and not moved).
       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
       and Deleted - will be marked as deleted before next unmodified block.
