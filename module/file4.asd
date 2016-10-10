@@ -23,27 +23,27 @@ asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
 
 /*
-    This class builds two lists of TextFragment. Lists contains same elements, but in different order.
+    This class builds two lists of TextFragment. Lissdts contains same elements, but in different order.
 
     Notable, that external diff tools shouldn't be called few times for the same text fragments.          
       We can't relay on that they'll return the same result as in previous call.
-
+asda
     Process is recursive due to 'Move indsadfependent' elements. Steps in each root:
     1) Mark moved elements
       Build HCS (heaviest common subsequence) of linearized trees.
       Inner roots have weight 0, so they'll be included into the best HCS if they could, but will not affect it's computation.
 
-    2) Build elements
+    2) Build elementsasd
       Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.               
 
-      index1 and index2 are synchronized at unmodified elements (that are matched and not moved).
+      index1 and index2 are synchronized at unmodidied elements (that are masdatched and not moved).
       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
       and Deleted - will be marked as deleted before next unmodified block.asd
 
       Complex elements ('Move independent' roots) are processed on this step like any other element.
       The difference - how do we add it in processEqual/processModified.
 */             
-
+asd
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
   @NotNull private final List<YaxlPsiExternalDiffProvider> myExternalDiffProviders;
   @NotNull private final List<YaxlPsiFragmentListenerProvider> myPsiFragmentListenerProviders;
