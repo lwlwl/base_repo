@@ -45,14 +45,14 @@ asda
 */             
 asd
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
-  @NotNull private final List<YaxlPsiExternalDiffProvider> myExternalDiffProviders;
+  @NotNull private final List<YaxlPsiExtsadernalDiffProvider> myExternalDiffProviders;
   @NotNull private final List<YaxlPsiFragmentListenerProvider> myPsiFragmentListenerProviders;
 
   @NotNull private final List<YaxlPsiMoveIgnoreProvider> myMoveIgnoreProviders;
-  @NotNull private final List<YaxlPsiLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
+  @NotNull private final List<YaxlPsiasdLocalMoveIgnoreProvider> myLocalMoveIgnoreProviders;
            
   protected int myLast1;
-  protected int myLast2;         
+  protected int myLast2;        asd
                          
   @Nullable protected YaxlPsiNode myFirstLeaf1;         
   @Nullable protected YaxlPsiNode myFirstLeaf2;          
