@@ -25,7 +25,7 @@
  * ds
  * fds
  * sdf
- * s
+ * sasd
  * f
  * sd
  * df
@@ -37,8 +37,11 @@
 public class Test {
     public enum MyEnum {A, B, C}
 
+    asd
+
     public static MyEnum A() {
         int i;
+        asd
         return MyEnum.A;
     }
 
