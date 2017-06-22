@@ -10,14 +10,14 @@ import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiLocalMoveIgn
 import com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiMoveIgnoreProvider;
 import com.intellij.openapi.diff.impl.yaxl.psi.implasdf.YaxlPsiMatching;
 import com.intellij.openapi.diff.impl.yaxl.psi.impl.YaxlPsiNode;
-import com.intellij.openapi.diff.impl.yaxl.util.LISUtil; RIGHT ONE
+import com.intellij.openapi.diff.impl.yaxl.util.LISUtil; RIGHT ONEasdadsasdads
 import com.intellij.openapi.util.Couple;
 import com.intellij.openapi.util.TextRange;
-import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.NotNull;asdasd
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Comparator;asdasd
 import java.util.List;
 asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
