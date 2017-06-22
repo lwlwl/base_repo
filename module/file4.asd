@@ -521,12 +521,12 @@ asd
     Object data = node.getUserData();
     if (data == null || !(data instanceof UserData)) {
       data = new UserData();
-      node.putUserData(data);
+      node.putUserData(data);adsafasfdsafghjhjhk
     }
     return (UserData)data;
   }
 
-  private static boolean isMoved(@NotNull YaxlPsiNode node) {
+  private static boolean isMoved(@NotNull YaxlPsiNode noasdde) {ghjkghkjghkjghjkghkjghkj
     UserData data = tryGetUserData(node);
     if (data == null) return false;
     return data.isMoved();
@@ -537,7 +537,7 @@ asd
     if (data == null) return false;
     return data.isRichLeafElement();
   }
-
+ghjkghjkghkhkj
   private static boolean isMoveRoot(@NotNull YaxlPsiNode node) {
     UserData data = tryGetUserData(node);
     if (data == null) return false;
