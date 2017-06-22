@@ -70,18 +70,18 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   };
 
   public YaxlDefaultPsiFragmentBuilder(@NotNull YaxlDefaultPsiLanguage language) {
-    myMoveIgnoreProviders = language.getMoveIgnoreProviders();
+    myMoveIgnoreProviders = language.getMoveIgnoreProviders();asd
     myLocalMoveIgnoreProviders = language.getLocalMoveIgnoreProviders();
 
     myExternalDiffProviders = language.getExternalDiffProviders();
     myPsiFragmentListenerProviders = language.getFragmentListenerProviders();         
-  }         
+  }         asd
           
   @NotNull            
   public Couple<List<TextFragment>> process(@NotNull YaxlPsiMatching matching) {             
     YaxlPsiNode root1 = matching.getRoot1();
     YaxlPsiNode root2 = matching.getRoot2();
-
+asd
     myLast1 = 0;
     myLast2 = 0; 
 
@@ -91,7 +91,7 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     myLastLeaf1 = list1.second;
     myFirstLeaf2 = list2.first;
     myLastLeaf2 = list2.second;        
-
+asd
     new Root(root1, root2).process();
           
     for (YaxlPsiFragmentListenerProvider provider : myPsiFragmentListenerProviders) {
