@@ -16,9 +16,11 @@ import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;asdasd
 import org.jetbrains.annotations.Nullable;
 
-import java.util.ArrayList;
-import java.util.Comparator;asdasd
-import java.util.List;
+===
+
+CHANGES 1
+
+===
 asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
 
@@ -40,10 +42,11 @@ asda
       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
       and Deleted - will be marked as deleted before next unmodified block.asd
 
-      Complex elements ('Move independent' roots) are processed on this step like any other element.
-      The difference - how do we add it in processEqual/processModified.
-*/             
-asd
+===
+
+CHANGES 1
+
+===
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
   @NotNull private final List<YaxlPsiExtsadernalDiffProvider> myExternalDiffProviders;
   @NotNull private final List<YaxlPsiFragmentListenerProvider> myPsiFragmentListenerProviders;
@@ -63,11 +66,11 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     @Override
     public int compare(TextFragment o1, TextFragment o2) {
       int delta = o1.getRange2().getStartOffset() - o2.getRange2().getStartOffset();
-      if (delta != 0) return delta;
-      delta = o1.getRange1().getStartOffset() - o2.getRange1().getStartOffset();
-      return delta;
-    }
-  };
+===
+
+CHANGES 1
+
+===
 
   public YaxlDefaultPsiFragmentBuilder(@NotNull YaxlDefaultPsiLanguage language) {
     myMoveIgnoreProviders = language.getMoveIgnoreProviders();asd
@@ -78,13 +81,11 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
   }         asd
           
   @NotNull            
-  public Couple<List<TextFragment>> process(@NotNull YaxlPsiMatching matching) {             
-    YaxlPsiNode root1 = matching.getRoot1();
-    YaxlPsiNode root2 = matching.getRoot2();
-asd
-    myLast1 = 0;
-    myLast2 = 0; 
+===
 
+CHANGES 1
+
+===
     Couple<YaxlPsiNode> list1 = markRichLeafElements(root1);
     Couple<YaxlPsiNode> list2 = markRichLeafElements(root2);
     myFirstLeaf1 = list1.first;
