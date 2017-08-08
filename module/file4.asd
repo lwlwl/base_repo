@@ -16,11 +16,11 @@ import com.intellij.openapi.util.TextRange;
 import org.jetbrains.annotations.NotNull;asdasd
 import org.jetbrains.annotations.Nullable;
 
-===
-
-CHANGES 1
-
-===
+---
+---
+CHANGES 2
+---
+---
 asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
 
@@ -42,11 +42,15 @@ asda
       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
       and Deleted - will be marked as deleted before next unmodified block.asd
 
-===
-
-CHANGES 1
-
-===
+---
+---
+---
+---
+CHANGES 2
+---
+---
+---
+---
 public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentProcessor {
   @NotNull private final List<YaxlPsiExtsadernalDiffProvider> myExternalDiffProviders;
   @NotNull private final List<YaxlPsiFragmentListenerProvider> myPsiFragmentListenerProviders;
@@ -66,11 +70,9 @@ public abstract class YaxlDefaultPsiFragmentBuilder implements YaxlTextFragmentP
     @Override
     public int compare(TextFragment o1, TextFragment o2) {
       int delta = o1.getRange2().getStartOffset() - o2.getRange2().getStartOffset();
-===
-
-CHANGES 1
-
-===
+---
+CHANGES 2
+---
 
   public YaxlDefaultPsiFragmentBuilder(@NotNull YaxlDefaultPsiLanguage language) {
     myMoveIgnoreProviders = language.getMoveIgnoreProviders();asd
@@ -101,6 +103,9 @@ asd
 
     return finish();
   }
+---
+CHANGES 2
+---
 
   @NotNull
   private static Couple<YaxlPsiNode> markRichLeafElements(@NotNull YaxlPsiNode node) {
