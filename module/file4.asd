@@ -20,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 ---
 CHANGES 2
 ---
----
+---asdasd
 asdf
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDiffProvider.DiffToolResult;
 
