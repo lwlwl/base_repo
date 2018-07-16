@@ -17,7 +17,6 @@ rrrrrr
 == Removed - Both ==
 1
 2
-rrrrrr
 3
 4
 == Inserted - Left ==
@@ -28,16 +27,22 @@ rrrrrr
 == Inserted - Both ==
 1
 2
+iiiii 2
+iiiii 2
 3
 4
 == Inserted - Both - Same ==
 1
 2
+iiiii
+iiiii
 3
 4
 == Inserted - Both - Same Whitespaces ==
 1
 2
+iii    iii
+iii    iii
 3
 4
 == Inserted Empty Line ==
@@ -54,7 +59,6 @@ rrrrrr
 == Removed Empty Line - Both ==
 1
 2
-
 3
 4
 == Modified - Left ==
@@ -64,34 +68,34 @@ rrrrrr
 4
 == Modified - Both ==
 1
-2
-3
+mmmmm 2
+mmmmm 2
 4
 == Modified - Both - Same ==
 1
-2
-3
+mmmmm
+mmmmm
 4
 == Modified - Both - Same Whitespaces ==
 1
-2
-3
+mmm    mmm
+mmm    mmm
 4
 == Modified - Removed ==
 1
 2
-rrrrrr
 3
 4
 == Modified - Inserted ==
 1
 2
 rrrrrr
+rrrrrr 2
 3
 4
 == Modified - Both - Different Whitespaces
 1
 2
-mmm rrr
+     mmm rrr
 3
 4
