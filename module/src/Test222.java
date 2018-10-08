@@ -2,28 +2,21 @@
  * some
  * as
  * s
- *
+ * <p>
  * s
  * sd
  * sdf
  * fs
- *
+ * <p>
  * dsf
  * sdf
  * sd
- *
- *
- *
- *
- *
  * f
  * dsf
  * dsf
  * ds
  * fds
- *
- *
- *
+ * <p>
  * dsfsdf
  * sdf
  * s
@@ -32,7 +25,7 @@
  * ds
  * fds
  * sdf
- * sasd
+ * s
  * f
  * sd
  * df
@@ -41,21 +34,11 @@
  * comment
  */
 
-
-
-
-
-
-
-
-public class Test {
+public class Test222 {
     public enum MyEnum {A, B, C}
-
-    asd
 
     public static MyEnum A() {
         int i;
-        asd
         return MyEnum.A;
     }
 
