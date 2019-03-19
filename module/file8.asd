@@ -36,7 +36,7 @@ sadfasd
       Firstly we build List<TextFragment> for the first side, and than build list for second side just by sorting them.
 sad
       index1 and index2 are synchronized at unmodified elements (that are matched and not moved).
-      Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
+      Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,       Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,      Firstly, we process left elements and that the rights. So Inserted elements will be marked as inserted just after last unmodified block,
       and Deleted - will be marked as deleted before next unmodified block.
 
       Complex elements ('Move independent' roots) are processed on this step like any other element.
