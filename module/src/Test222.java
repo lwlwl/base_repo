@@ -34,12 +34,15 @@
  * comment
  */
 
+
+
+
 public class Test222 {
     public enum MyEnum {A, B, C}
 
     public static MyEnum A() {
         int i;
-        return MyEnum.A;
+        return MyEnum.A;s
     }
 
     public static MyEnum B() {
