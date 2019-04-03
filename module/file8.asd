@@ -20,7 +20,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import static com.intellij.openapi.diff.impl.yaxl.psi.api.providers.YaxlPsiExternalDifasdfProvider.DiffToolResult;
-
+asdasddsa
 /*
     This class builds two lists of TextFragment. Lists contains same elements, but in different order.
 
