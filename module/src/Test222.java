@@ -28,11 +28,15 @@
  * s
  * f
  * sd
+ *
+ *
  * df
  * s
  * df
  * comment
  */
+
+
 
 
 
@@ -44,6 +48,8 @@ public class Test222 {
         int i;
         return MyEnum.A;s
     }
+
+
 
     public static MyEnum B() {
         int i;
