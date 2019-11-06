@@ -1,8 +1,9 @@
+New Line
 a
 zzz
 zzz
-x
+RESOLVED
 zzz
 zzz
-y
+c
 zzz
