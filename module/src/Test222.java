@@ -1,3 +1,4 @@
+New Line
 /**
  * some
  * as
@@ -16,8 +17,7 @@
  * dsf
  * ds
  * fds
- *
- *
+RESOLVED
  * <p>
  * dsfsdf
  * sdf
